@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Background Change</title>
+    <style>
+        .btnNav {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: initial;
+        }
+        .btnNav.active {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="btnNav" id="btnToken" data-url="#form">Tokens</button>
+        <button class="btnNav" id="btnNfts" data-url="#site">NFTs</button>
+        <button class="btnNav" id="btnRedeem" data-url="#site">Redeem</button>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.btnNav');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove 'active' class from all buttons
+                buttons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add 'active' class to the clicked button
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
