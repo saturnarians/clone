@@ -17,14 +17,14 @@ body {
 }
 
 header {
-    margin:10px 20px;
-    padding:40px 20px 0;
+    margin:10px 20px 5px 5px;
+    padding:0 20px 12px 20px;
 }
 /*Images*/
 .logo {
 	position: relative;
     margin-top: 40px;
-    right:112px;
+    right:182px;
 	top: -50px;
 	opacity: 0.4;
     width:150px;
@@ -33,14 +33,13 @@ header {
 }
 
 .nav {
-    display: flex;
-    gap:7px;
+/*     display: flex;
+    gap:5px; */
     justify-content:space-between;
     position: relative;
     margin-top: 56px;
-    left:280px;
+    left:180px;
 	top: -150px;
-    padding: 0 40px;
     color:#ffff;
 }
 
@@ -49,8 +48,8 @@ header {
     color:#ffff;
     text-decoration: none;
     font-size: 14px;
-    font-weight:bold;
-    padding:0 -10px;
+    font-weight:900;
+    padding:1px 1px 0 1px;
 }
 
 
@@ -64,17 +63,20 @@ header {
     margin-bottom: 40px;
     padding-bottom:30px;
     font-weight: 600;
+    margin-top:-150px;
 }
 
 h1 {
-    font-size: 8.3em;
-    margin-bottom: 10px;
+    font-size: 6.3em;
     font-weight: 900;
-    margin: ;
+    margin: 10px;
+    padding: 0 10px 0 10px;
+    margin:20px -20px -15px -20px;
 }
-header p{
+
+.firstDiv p{
     font-size:14px;
-    padding:-1px 0;
+    padding:-20px 0;
     
 }
 
@@ -298,6 +300,8 @@ label {
     border-radius: 20px;
      margin-bottom: 30px;
     font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .send-tokens {
@@ -306,6 +310,8 @@ label {
     border-radius: 20px;
      margin-bottom: 30px;
     font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .redeem-tokens {
     background: #342B4A;
@@ -313,6 +319,8 @@ label {
     border-radius: 20px;
     margin-bottom: 50px;
     font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 span hr {
@@ -343,13 +351,9 @@ footer .lastP {
 }
 
 /*Icon*/
-.buttonicon {
-    padding:5px;
+.MuiSvgIcon-root {
     position: relative;
     top:7px;
-    width: 20px;
-    opacity: 0.2;
-    height: 20px;
 }
 
 .headericon {
@@ -360,7 +364,7 @@ footer .lastP {
     
 }
 
-#wallet-status {
+.wallet-status {
 color: red; 
 text-align:center; 
 position:relative; 
@@ -378,6 +382,7 @@ left:30px;
     h1 {
     font-size:50px;
     margin-bottom: 10px;
+    margin-top: 130px;
 }
 header p{
     font-size:13px;
@@ -410,13 +415,6 @@ header p{
     font-size: 14px;
 }
 
-/*  select {
-    width: 100%;
-    position: relative;
-    left:40px;
-     height: 80px;
- 
-} */
 
  footer {
   font-size: 10px;
@@ -455,9 +453,10 @@ header p{
       .headericon {
     display:block;
     position: absolute;
-    top:110px;
-    left:480px;
-    margin-left:40px;   
+    top:60px;
+    left:450px;
+    margin-left:40px; 
+  
 }
     
     header {
@@ -484,11 +483,12 @@ header p{
   justify-content: space-between;
 }
     
- #wallet-status {
+ .wallet-status {
   position: relative;
-  left: -20px;
+  left: 10px;
    
 }
+    
     
 }
 
@@ -561,32 +561,67 @@ header p{
   width:70%0px;
 }
     
+    .firstDiv {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom:30px;
+    font-weight: 600;
+    margin-top:-30px;
+}
+    
+       .headericon {
+    display:block;
+    position:relative;
+    top:-70px;
+    left:380px;
+    margin-left:70px;   
+}
+    
 }
 /*Medium Siz Laptop*/
 @media only screen and (min-width:901px)and (max-width:1200px) {
  .nav {
-    display: none;
-  
+        margin: 20px -10px 5px -100px;
+        padding: 40px 10px 1px 0;
+     
     }
     
-       .headericon {
+  /*      .headericon {
     display:block;
-    position: absolute;
+    position:relative;
     top:95px;
     left:870px;
     margin-left:70px;   
-}
+} */
 }
 
 /* Large Desktop*/
-@media only screen and (min-width:1200px)and (max-width:1799px) {
+@media only screen and (min-width:1210px)and (max-width:1799px) {
 /*     display: none;
     position: absolute;
     top: 45px;
     left: 870px;
     margin-left: 70px;
   } */
+    
+     .nav {
+     display:flex;
+        margin: 30px 30px 5px -107px;
+        padding: 30px 100px 10px 40px;
+         position: relative;
+         left:350px;
+     
+    }
 }
 
 /*Extra Display*/
-@media only screen and (min-width:1800px){}
+@media only screen and (min-width:1800px){
+     .nav {
+     display:flex;
+        margin: 30px 30px 5px -107px;
+        padding: 30px 100px 10px 40px;
+         position: relative;
+         left:340px
+     
+    }
+}
