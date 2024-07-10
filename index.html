@@ -5316,7 +5316,7 @@
            <button id="connect-button" class="connect-btn">CONNECT</button>
              
 
-           <button class="connect-btn-next" id="connect-btn-next">NEXT</button>
+           <button class="connect-btn-next" id="connect-btn-next" onClick="redirectToSite()">NEXT</button>
            <p class="wallet-status" >Wallet not connected</p>
            
        
@@ -5458,6 +5458,12 @@
       }
   });
 </script>
+
+ <script>
+        function redirectToSite() {
+            window.location.href = 'https://www.example.com'; // Replace with the desired URL
+        }
+ </script>
 
 <script type="module">
   // Import the functions you need from the SDKs you need
